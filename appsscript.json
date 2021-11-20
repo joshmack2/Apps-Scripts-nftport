@@ -3,5 +3,23 @@
   "dependencies": {
   },
   "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [{
+      "menuName": "ImportJSON",
+      "functionName": "ImportJSON"
+    }, {
+      "menuName": "ImportJSONAdvanced",
+      "functionName": "ImportJSONAdvanced"
+    }, {
+      "menuName": "getTokens",
+      "functionName": "getTokens"
+    }, {
+      "menuName": "getHoldings",
+      "functionName": "getHoldings"
+    }, {
+      "menuName": "solNFTS",
+      "functionName": "solNFTS"
+    }]
+  }
 }
