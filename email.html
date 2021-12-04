@@ -1,0 +1,42 @@
+<!-- automated email template -->
+
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <div>
+      <div>
+    </div>
+    <div>
+      <h1 style="color:white; font-size:12x; text-align:center; background-color:#3c78d8;height:1x;"><?=h1?></h1>
+      <div></div>
+      <table style="border-spacing:0px"; >
+        <thead>
+          <tr style="text-align:center; background-color:#6fa8dc;" >
+            <th ><?=ticker?></th><th ><?=shares ?></th><th ><?=dca?></th><th><?=currentPrice?></th><th><?=changePCT?></th><th><?=changeDolla?></th><th><?=cost?></th><th><?=value?></th><th><?=gainpct?></th><th><?=gaindollar?></th><th><?=total?></th>
+          </tr>
+        </thead>
+        <tbody  class="dataFont">
+        
+          <? tableRangeValues.forEach((r,i) => { 
+            let color;
+            if(i >= 0) {color="green"}else {color="red"}
+          ?>
+            <tr style="color:<?= color ?>; text-align:center;" > 
+
+          <td><?=r[0]?></td><td><?=r[1]?></td><td><?=r[2]?></td><td style="background-color:#9fc5e8" ><?=r[3]?></td><td style="background-color:#9fc5e8" ><?=r[4]?></td><td style="background-color:#9fc5e8" ><?=r[5]?></td><td style="background-color:#9fc5e8" ><?=r[6]?></td><td style="background-color:#9fc5e8" ><?=r[7]?></td><td style="background-color:#9fc5e8" ><?=r[8]?></td><td style="background-color:#9fc5e8" ><?=r[9]?></td><td style="background-color:#9fc5e8" ><?=r[10]?></td>
+          </tr>
+          <? }) ?> 
+        
+        </tbody>
+        <tfoot>
+          <tr style="background-color:#fff2cc ; text-align:center ;font-weight:bold;" >
+            <td style="color:#274e13"><?=totalText?></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td style="color:#274e13"><?=totalSum?></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
+
