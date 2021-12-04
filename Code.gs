@@ -31,7 +31,6 @@ function MyPortfolio(tickers, values) {
   //   var activeSheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
   //   var metamaskXpath = "//*[@id='ContentPlaceHolder1_divSummary']/div[1]/div[1]/div/div[2]/div[2]/div[2]/text()" ;  
-  //   var metamaskURL = "https://etherscan.io/address/0x563861107b202906609e699f43edc823482ba7d7"
   //   var importMetaMask = '=IMPORTXML("' + metamaskURL + '?' + queryString + '","'+ metamaskXpath + '")';
   //   SpreadsheetApp.getActiveSheet().getRange('B6').setValue(importMetaMask);}
 
